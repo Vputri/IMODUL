@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vika.IModul">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IMODUL">
+        <activity android:name=".ATA.Komunikasi.Pertemuan7Activity"></activity>
+        <activity android:name=".ATA.Komunikasi.Pertemuan6Activity" />
+        <activity android:name=".ATA.Komunikasi.Pertemuan5Activity" />
+        <activity android:name=".ATA.Komunikasi.Pertemuan4Activity" />
+        <activity android:name=".ATA.Komunikasi.Pertemuan3Activity" />
+        <activity android:name=".ATA.Komunikasi.Pertemuan2Activity" />
+        <activity android:name=".ATA.Komunikasi.Pertemuan1Activity" />
+        <activity android:name=".ATA.Komunikasi.MAActivity" />
+        <activity android:name=".ptaActivity" />
+        <activity android:name=".ataActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
