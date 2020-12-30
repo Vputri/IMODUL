@@ -5,6 +5,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.view.View;
 import android.os.Bundle;
 import android.content.Intent;
+import vika.IModul.PTA.Komunikasi.PTA_MA;
 import static vika.IModul.MainActivity.closeDrawer;
 import static vika.IModul.MainActivity.openDrawer;
 import static vika.IModul.MainActivity.redirectActivity;
@@ -47,31 +48,17 @@ public class ptaActivity extends AppCompatActivity {
         redirectActivity(this, AboutActivity.class);
     }
 
-    protected void onPause(){
-        super.onPause();
-        closeDrawer(drawerLayout);
-    }
+    public void SI(View view) { }
 
-    public void SI(View view) {
-    }
+    public void TI(View view) { }
 
+    public void Manajemen(View view) { }
 
-    public void TI(View view) {
-    }
+    public void Akuntansi(View view) { }
 
-
-    public void Manajemen(View view) {
-    }
-
-
-    public void Akuntansi(View view) {
-    }
-
-
-    public void Psikolog(View view) {
-    }
-
+    public void Psikolog(View view) { }
 
     public void Komunikasi(View view) {
+        redirectActivity(this, PTA_MA.class);
     }
 }

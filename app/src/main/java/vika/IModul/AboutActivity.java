@@ -17,7 +17,6 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-
         drawerLayout = findViewById(R.id.drawer_layout);
     }
 
@@ -46,10 +45,5 @@ public class AboutActivity extends AppCompatActivity {
 
     public void ClickAbout(View view){
         recreate();
-    }
-
-    protected void onPause(){
-        super.onPause();
-        closeDrawer(drawerLayout);
     }
 }

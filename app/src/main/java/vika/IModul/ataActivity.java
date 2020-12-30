@@ -6,9 +6,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import vika.IModul.ATA.Komunikasi.MAActivity;
-
+import vika.IModul.ATA.MAStatistika;
 import static vika.IModul.MainActivity.closeDrawer;
 import static vika.IModul.MainActivity.openDrawer;
 import static vika.IModul.MainActivity.redirectActivity;
@@ -19,6 +17,7 @@ public class ataActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_ata);
 
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -56,27 +55,17 @@ public class ataActivity extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
-    public void SI1(View view) {
-    }
+    public void SI1(View view) { }
 
+    public void TI1(View view) { }
 
-    public void TI1(View view) {
-    }
+    public void Manajemen1(View view) { }
 
+    public void Akuntansi1(View view) { }
 
-    public void Manajemen1(View view) {
-    }
-
-
-    public void Akuntansi1(View view) {
-    }
-
-
-    public void Psikolog1(View view) {
-    }
-
+    public void Psikolog1(View view) { }
 
     public void Komunikasi1(View view) {
-        redirectActivity(this, MAActivity.class);
+        redirectActivity(this, MAStatistika.class);
     }
 }
