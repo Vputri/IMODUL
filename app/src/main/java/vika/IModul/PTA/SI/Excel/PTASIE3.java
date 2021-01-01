@@ -1,14 +1,14 @@
-package vika.IModul.PTA.SI.AP;
+package vika.IModul.PTA.SI.Excel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class APPert4 extends AppCompatActivity {
+public class PTASIE3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_appert4);
+        setContentView(R.layout.activity_ptasie3);
     }
 }
