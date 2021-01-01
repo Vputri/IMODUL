@@ -5,7 +5,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.view.View;
 import android.os.Bundle;
 import android.content.Intent;
-import vika.IModul.PTA.Komunikasi.PTA_MA;
+import vika.IModul.PTA.Komunikasi_Psikolog.PTA_MA;
+import vika.IModul.PTA.SI.PTASI;
+import vika.IModul.PTA.SI.PTASIMODUL;
+
 import static vika.IModul.MainActivity.closeDrawer;
 import static vika.IModul.MainActivity.openDrawer;
 import static vika.IModul.MainActivity.redirectActivity;
@@ -15,8 +18,7 @@ public class ptaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pta);
+        super.onCreate(savedInstanceState);setContentView(R.layout.activity_pta);
 
         drawerLayout = findViewById(R.id.drawer_layout);
     }
@@ -48,7 +50,7 @@ public class ptaActivity extends AppCompatActivity {
         redirectActivity(this, AboutActivity.class);
     }
 
-    public void SI(View view) { }
+    public void SI(View view) { redirectActivity(this, PTASI.class);}
 
     public void TI(View view) { }
 
@@ -56,9 +58,7 @@ public class ptaActivity extends AppCompatActivity {
 
     public void Akuntansi(View view) { }
 
-    public void Psikolog(View view) { }
+    public void Psikolog(View view) { redirectActivity(this, PTA_MA.class); }
 
-    public void Komunikasi(View view) {
-        redirectActivity(this, PTA_MA.class);
-    }
+    public void Komunikasi(View view) { redirectActivity(this, PTA_MA.class); }
 }

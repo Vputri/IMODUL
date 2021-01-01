@@ -22,6 +22,7 @@ public class PTA_AP extends AppCompatActivity {
         setContentView(R.layout.activity_ptaap);
         drawerLayout = findViewById(R.id.drawer_layout);
     }
+
     public void ClickMenu(View view){
         openDrawer(drawerLayout);
     }

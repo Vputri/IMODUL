@@ -1,4 +1,4 @@
-package vika.IModul.PTA.Komunikasi;
+package vika.IModul.PTA.Komunikasi_Psikolog;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;

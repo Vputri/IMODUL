@@ -63,8 +63,6 @@ public class ataActivity extends AppCompatActivity {
 
     public void Akuntansi1(View view) { }
 
-    public void Psikolog1(View view) { }
-
     public void Komunikasi1(View view) {
         redirectActivity(this, MAStatistika.class);
     }

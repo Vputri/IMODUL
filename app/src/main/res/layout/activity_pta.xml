@@ -313,14 +313,10 @@
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                             android:textColor="#9C27B0"
                             android:textStyle="bold" />
-
                     </RelativeLayout>
-
                 </com.google.android.material.card.MaterialCardView>
-
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
     <RelativeLayout
         android:layout_width="wrap_content"

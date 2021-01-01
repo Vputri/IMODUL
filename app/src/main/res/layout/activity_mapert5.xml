@@ -1,34 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PTA.Komunikasi.MA_pert5">
+    tools:context=".PTA.Komunikasi_Psikolog.MA_pert5">
 
-    <LinearLayout
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <include layout="@layout/main_toolbar"/>
+        android:layout_height="match_parent"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <com.github.barteksc.pdfviewer.PDFView
-                android:id="@+id/pdfView5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-        </RelativeLayout>
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@android:color/white">
-        <include layout="@layout/main_nav_drawer"/>
-    </RelativeLayout>
-
-</androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

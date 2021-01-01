@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".PTA.Komunikasi.PTA_MA">
+    tools:context=".PTA.Komunikasi_Psikolog.PTA_MA">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -111,7 +112,6 @@
                             android:textStyle="bold" />
                     </RelativeLayout>
                 </com.google.android.material.card.MaterialCardView>
-
             </LinearLayout>
 
             <LinearLayout
@@ -362,7 +362,6 @@
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
     <RelativeLayout
         android:layout_width="wrap_content"
