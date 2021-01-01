@@ -1,4 +1,4 @@
-package vika.IModul.PTA.SI;
+package vika.IModul.PTA.SI.Java;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -6,28 +6,21 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
-import vika.IModul.PTA.Komunikasi_Psikolog.PTA_MA;
-import vika.IModul.PTA.SI.COBOL.cobol;
-import vika.IModul.PTA.SI.Java.JAVA;
-import vika.IModul.PTA.SI.matif.matif;
-import vika.IModul.PTA.SI.matlan.matlan;
 import vika.IModul.R;
 
 import static vika.IModul.MainActivity.closeDrawer;
 import static vika.IModul.MainActivity.openDrawer;
 import static vika.IModul.MainActivity.redirectActivity;
 
-public class PTASIMODUL2 extends AppCompatActivity {
+public class JAVA extends AppCompatActivity {
     DrawerLayout drawerLayout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ptasimodul2);
+        setContentView(R.layout.activity_java);
         drawerLayout = findViewById(R.id.drawer_layout);
     }
 
@@ -63,21 +56,18 @@ public class PTASIMODUL2 extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
-    public void TPT(View view) {
-        Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();
-    }
-    public void PPOB(View view) { redirectActivity(this, cobol.class);}
-    public void MI(View view) { redirectActivity(this, matif.class);}
-    public void ML(View view) { redirectActivity(this, matlan.class);}
-    public void AP(View view) {redirectActivity(this, JAVA.class);}
-    public void LA(View view) { redirectActivity(this, LogikaAlgoritma.class);}
-    public void TPT1(View view) {
-        Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();
-    }
-    public void ODS(View view) {
-        redirectActivity(this, PTA_MA.class);
-    }
-    public void Sta(View view) {
-        redirectActivity(this, PTA_MA.class);
-    }
+    public void Pert1(View view) { redirectActivity(this, java1.class);}
+    public void Pert2(View view) { redirectActivity(this, java2.class);}
+    public void Pert3(View view) { redirectActivity(this, java3.class);}
+    public void Pert4(View view) { redirectActivity(this, java4.class);}
+    public void Pert5(View view) { redirectActivity(this, java5.class);}
+    public void Pert6(View view) { redirectActivity(this, java6.class);}
+    public void Pert7(View view) { redirectActivity(this, Java7.class);}
+    public void Pert8(View view) { redirectActivity(this, Java8.class);}
+    public void Pert9(View view) { redirectActivity(this, java9.class);}
+    public void Pert10(View view) { redirectActivity(this, java10.class);}
+    public void Pert11(View view) { redirectActivity(this, java11.class);}
+    public void Pert12(View view) { redirectActivity(this, java12.class);}
+    public void Pert13(View view) { redirectActivity(this, java13.class);}
+
 }
