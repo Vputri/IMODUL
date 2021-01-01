@@ -9,6 +9,10 @@ import android.view.View;
 
 import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
+import vika.IModul.PTA.Komunikasi_Psikolog.PTA_MA;
+import vika.IModul.PTA.SI.Java.JAVA;
+import vika.IModul.PTA.SI.RO.RO;
+import vika.IModul.PTA.SI.SBD.SBD;
 import vika.IModul.R;
 
 import static vika.IModul.MainActivity.closeDrawer;
@@ -57,12 +61,8 @@ public class PTASIMODUL3 extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
-    public void SBD(View view) {
-    }
-    public void SBD1(View view) {
-    }
-    public void PBO(View view) {
-    }
-    public void TRO(View view) {
-    }
+    public void SBD(View view) { redirectActivity(this, SBD.class); }
+    public void SBD1(View view) { redirectActivity(this, SBD.class);}
+    public void PBO(View view) { redirectActivity(this, JAVA.class);}
+    public void TRO(View view) { redirectActivity(this, RO.class);}
 }
