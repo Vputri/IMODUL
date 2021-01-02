@@ -1,26 +1,25 @@
-package vika.IModul;
+package vika.IModul.PTA.TI.SO;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import android.view.View;
-import android.os.Bundle;
-import android.content.Intent;
-import vika.IModul.PTA.Komunikasi_Psikolog.PTA_MA;
-import vika.IModul.PTA.SI.PTASI;
-import vika.IModul.PTA.SI.PTASIMODUL;
-import vika.IModul.PTA.TI.PTA_TI;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import vika.IModul.AboutActivity;
+import vika.IModul.MainActivity;
+import vika.IModul.R;
 import static vika.IModul.MainActivity.closeDrawer;
 import static vika.IModul.MainActivity.openDrawer;
 import static vika.IModul.MainActivity.redirectActivity;
 
-public class ptaActivity extends AppCompatActivity {
+public class SO extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);setContentView(R.layout.activity_pta);
-
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_so);
         drawerLayout = findViewById(R.id.drawer_layout);
     }
 
@@ -50,16 +49,12 @@ public class ptaActivity extends AppCompatActivity {
     public void ClickAbout(View view){
         redirectActivity(this, AboutActivity.class);
     }
-
-    public void SI(View view) { redirectActivity(this, PTASI.class);}
-
-    public void TI(View view) { redirectActivity(this, PTA_TI.class);}
-
-    public void Manajemen(View view) { }
-
-    public void Akuntansi(View view) { }
-
-    public void Psikolog(View view) { redirectActivity(this, PTA_MA.class); }
-
-    public void Komunikasi(View view) { redirectActivity(this, PTA_MA.class); }
+    public void sopert1(View view) { redirectActivity(this, So1.class);}
+    public void sopert2(View view) { redirectActivity(this, So2.class);}
+    public void sopert3(View view) { redirectActivity(this, So3.class);}
+    public void sopert4(View view) { redirectActivity(this, So4.class);}
+    public void sopert5(View view) { redirectActivity(this, So5.class);}
+    public void sopert6(View view) { redirectActivity(this, So6.class);}
+    public void sopert7(View view) { redirectActivity(this, So7.class);}
+    public void sopert8(View view) { redirectActivity(this, So8.class);}
 }

@@ -1,4 +1,4 @@
-package vika.IModul.PTA.SI.Qbasic;
+package vika.IModul.PTA.TI.SO;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,15 +8,15 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 import vika.IModul.R;
 
-public class APPert1 extends AppCompatActivity {
+public class So4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_appert1);
+        setContentView(R.layout.activity_so4);
 
         PDFView pdfView;
-        pdfView = findViewById(R.id.pdfView8);
-        pdfView.fromAsset("PTA_AP1.pdf").load();
+        pdfView = findViewById(R.id.pdfView83);
+        pdfView.fromAsset("SO4.pdf").load();
     }
 }
