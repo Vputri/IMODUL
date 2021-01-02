@@ -53,7 +53,7 @@ public class PTA_TI extends AppCompatActivity {
         }
         catch (android.content.ActivityNotFoundException ex) { }
     }
-    
+
     public void TI1(View view) { redirectActivity(this, JAVA.class);}
     public void TI2(View view) { redirectActivity(this, matif.class);}
     public void TI3(View view) { redirectActivity(this, PTAWin.class);}

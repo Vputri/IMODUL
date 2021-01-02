@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IMODUL">
-        <activity android:name=".PTA.TI.Tekkom.Tekkom"></activity>
+        <activity android:name=".PTA.TI.Tekkom.Tekkom7"></activity>
+        <activity android:name=".PTA.TI.Tekkom.Tekkom6" />
+        <activity android:name=".PTA.TI.Tekkom.Tekkom5" />
+        <activity android:name=".PTA.TI.Tekkom.Tekkom4" />
+        <activity android:name=".PTA.TI.Tekkom.Tekkom3" />
+        <activity android:name=".PTA.TI.Tekkom.Tekkom2" />
+        <activity android:name=".PTA.TI.Tekkom.Tekkom1" />
+        <activity android:name=".PTA.TI.Tekkom.Tekkom" />
         <activity android:name=".PTA.TI.PTA_TI" />
         <activity android:name=".PTA.TI.SO.So8" />
         <activity android:name=".PTA.TI.SO.So7" />
