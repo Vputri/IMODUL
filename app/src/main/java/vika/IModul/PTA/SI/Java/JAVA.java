@@ -56,18 +56,18 @@ public class JAVA extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
-    public void Pert1(View view) { redirectActivity(this, java1.class);}
-    public void Pert2(View view) { redirectActivity(this, java2.class);}
-    public void Pert3(View view) { redirectActivity(this, java3.class);}
-    public void Pert4(View view) { redirectActivity(this, java4.class);}
-    public void Pert5(View view) { redirectActivity(this, java5.class);}
-    public void Pert6(View view) { redirectActivity(this, java6.class);}
-    public void Pert7(View view) { redirectActivity(this, Java7.class);}
-    public void Pert8(View view) { redirectActivity(this, Java8.class);}
-    public void Pert9(View view) { redirectActivity(this, java9.class);}
-    public void Pert10(View view) { redirectActivity(this, java10.class);}
-    public void Pert11(View view) { redirectActivity(this, java11.class);}
-    public void Pert12(View view) { redirectActivity(this, java12.class);}
-    public void Pert13(View view) { redirectActivity(this, java13.class);}
+    public void javaPert1(View view) { redirectActivity(this, java1.class);}
+    public void javaPert2(View view) { redirectActivity(this, java2.class);}
+    public void javaPert3(View view) { redirectActivity(this, java3.class);}
+    public void javaPert4(View view) { redirectActivity(this, java4.class);}
+    public void javaPert5(View view) { redirectActivity(this, java5.class);}
+    public void javaPert6(View view) { redirectActivity(this, java6.class);}
+    public void javaPert7(View view) { redirectActivity(this, Java7.class);}
+    public void javaPert8(View view) { redirectActivity(this, Java8.class);}
+    public void javaPert9(View view) { redirectActivity(this, java9.class);}
+    public void javaPert10(View view) { redirectActivity(this, java10.class);}
+    public void javaPert11(View view) { redirectActivity(this, java11.class);}
+    public void javaPert12(View view) { redirectActivity(this, java12.class);}
+    public void javaPert13(View view) { redirectActivity(this, java13.class);}
 
 }

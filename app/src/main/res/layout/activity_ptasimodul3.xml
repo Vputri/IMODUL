@@ -156,7 +156,7 @@
                             android:layout_below="@+id/pbo"
                             android:layout_marginTop="40dp"
                             android:gravity="center"
-                            android:text="Pemograman Berorientasi\nObjek"
+                            android:text="Pemograman\n Berorientasi Objek"
                             android:textSize="12dp"
                             android:layout_marginBottom="15dp"
                             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"

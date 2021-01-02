@@ -47,12 +47,12 @@ public class Tekkom extends AppCompatActivity {
     }
 
 
-    public void pert1(View view) { redirectActivity(this, Tekkom1.class);}
-    public void pert2(View view) { redirectActivity(this, Tekkom2.class);}
-    public void pert3(View view) { redirectActivity(this, Tekkom3.class);}
-    public void pert4(View view) { redirectActivity(this, Tekkom4.class);}
-    public void pert5(View view) { redirectActivity(this, Tekkom5.class);}
-    public void pert6(View view) { redirectActivity(this, Tekkom6.class);}
-    public void pert7(View view) { redirectActivity(this, Tekkom7.class);}
+    public void tekkompert1(View view) { redirectActivity(this, Tekkom1.class);}
+    public void tekkompert2(View view) { redirectActivity(this, Tekkom2.class);}
+    public void tekkompert3(View view) { redirectActivity(this, Tekkom3.class);}
+    public void tekkompert4(View view) { redirectActivity(this, Tekkom4.class);}
+    public void tekkompert5(View view) { redirectActivity(this, Tekkom5.class);}
+    public void tekkompert6(View view) { redirectActivity(this, Tekkom6.class);}
+    public void tekkompert7(View view) { redirectActivity(this, Tekkom7.class);}
 
 }
