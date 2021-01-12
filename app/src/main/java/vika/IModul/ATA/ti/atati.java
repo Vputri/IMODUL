@@ -1,24 +1,33 @@
-package vika.IModul.PTA.TI.SO;
+package vika.IModul.ATA.ti;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import vika.IModul.AboutActivity;
+
+import vika.IModul.ATA.ti.C.c;
+import vika.IModul.ATA.ti.fortan.fortan;
+import vika.IModul.ATA.ti.matif.maatif;
+import vika.IModul.ATA.ti.openoffice.oo;
+import vika.IModul.ATA.ti.pascal.pascal;
+import vika.IModul.ATA.ti.python.python;
+import vika.IModul.ATA.ti.statistika.tisat;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
+
 import static vika.IModul.MainActivity.closeDrawer;
 import static vika.IModul.MainActivity.openDrawer;
 import static vika.IModul.MainActivity.redirectActivity;
 
-public class SO extends AppCompatActivity {
+public class atati extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_so);
+        setContentView(R.layout.activity_atati);
         drawerLayout = findViewById(R.id.drawer_layout);
     }
 
@@ -45,15 +54,22 @@ public class SO extends AppCompatActivity {
         catch (android.content.ActivityNotFoundException ex) { }
     }
 
-    public void ClickAbout(View view){
-        redirectActivity(this, AboutActivity.class);
-    }
-    public void sopert1(View view) { redirectActivity(this, So1.class);}
-    public void sopert2(View view) { redirectActivity(this, So2.class);}
-    public void sopert3(View view) { redirectActivity(this, So3.class);}
-    public void sopert4(View view) { redirectActivity(this, So4.class);}
-    public void sopert5(View view) { redirectActivity(this, So5.class);}
-    public void sopert6(View view) { redirectActivity(this, So6.class);}
-    public void sopert7(View view) { redirectActivity(this, So7.class);}
-    public void sopert8(View view) { redirectActivity(this, So8.class);}
+    public void KTI(View view) { redirectActivity(this, oo.class);}
+
+    public void Daskom(View view) { redirectActivity(this, c.class);}
+
+    public void PDKP(View view) { redirectActivity(this, pascal.class);}
+
+    public void Matif(View view) { redirectActivity(this, maatif.class);}
+
+    public void PAP(View view) { redirectActivity(this, python.class);}
+
+    public void PBOIA(View view) {}
+
+    public void statistika(View view) { redirectActivity(this, tisat.class);}
+
+    public void RK(View view) { redirectActivity(this, fortan.class);}
+
+    public void TBO(View view) { }
+
 }

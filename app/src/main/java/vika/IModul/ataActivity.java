@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import vika.IModul.ATA.MAStatistika;
+import vika.IModul.ATA.ti.atati;
+
 import static vika.IModul.MainActivity.closeDrawer;
 import static vika.IModul.MainActivity.openDrawer;
 import static vika.IModul.MainActivity.redirectActivity;
@@ -57,7 +59,7 @@ public class ataActivity extends AppCompatActivity {
 
     public void SI1(View view) { }
 
-    public void TI1(View view) { }
+    public void TI1(View view) { redirectActivity(this, atati.class);}
 
     public void Manajemen1(View view) { }
 
