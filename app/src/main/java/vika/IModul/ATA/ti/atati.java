@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.ATA.si.jav;
 import vika.IModul.ATA.ti.C.c;
+import vika.IModul.ATA.ti.TBO.tbo;
 import vika.IModul.ATA.ti.fortan.fortan;
 import vika.IModul.ATA.ti.matif.maatif;
 import vika.IModul.ATA.ti.openoffice.oo;
@@ -64,12 +66,12 @@ public class atati extends AppCompatActivity {
 
     public void PAP(View view) { redirectActivity(this, python.class);}
 
-    public void PBOIA(View view) {}
+    public void PBOIA(View view) { redirectActivity(this, jav.class);}
 
     public void statistika(View view) { redirectActivity(this, tisat.class);}
 
     public void RK(View view) { redirectActivity(this, fortan.class);}
 
-    public void TBO(View view) { }
+    public void TBO(View view) { redirectActivity(this, tbo.class);}
 
 }

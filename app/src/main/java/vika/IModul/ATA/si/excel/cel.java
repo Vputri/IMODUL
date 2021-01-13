@@ -1,14 +1,66 @@
 package vika.IModul.ATA.si.excel;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import vika.IModul.AboutActivity;
+import vika.IModul.MainActivity;
+import vika.IModul.R;
+
+import static vika.IModul.MainActivity.closeDrawer;
+import static vika.IModul.MainActivity.openDrawer;
+import static vika.IModul.MainActivity.redirectActivity;
 
 public class cel extends AppCompatActivity {
-
+    DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cel);
+        drawerLayout = findViewById(R.id.drawer_layout);
     }
+
+    public void ClickMenu(View view){
+        openDrawer(drawerLayout);
+    }
+
+    public void ClickLogo(View view){
+        closeDrawer(drawerLayout);
+    }
+
+    public void ClickHome(View view){
+        redirectActivity(this, MainActivity.class);
+    }
+
+    public void ClickFeedBack(View view){
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"ilab@gunadarma.ac.id"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, "FeedBack I-Modul App");
+        try {
+            startActivity(Intent.createChooser(intent, "How to send mail?"));
+        }
+        catch (android.content.ActivityNotFoundException ex) { }
+    }
+
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
+
+    protected void onPause(){
+        super.onPause();
+        closeDrawer(drawerLayout);
+    }
+
+    public void cel1(View view) { redirectActivity(this, cel1.class);}
+    public void cel2(View view) { redirectActivity(this, cel2.class);}
+    public void cel3(View view) { redirectActivity(this, cel3.class);}
+    public void cel4(View view) { redirectActivity(this, cel4.class);}
+    public void cel5(View view) { redirectActivity(this, cel5.class);}
+    public void cel6(View view) { redirectActivity(this, cel6.class);}
+    public void cel7(View view) { redirectActivity(this, cel.class);}
 }
