@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import vika.IModul.ATA.MAStatistika;
+import vika.IModul.ATA.akuntansi.ataakun;
+import vika.IModul.ATA.manajemen.manajemenata;
 import vika.IModul.ATA.si.atasi;
 import vika.IModul.ATA.ti.atati;
 
@@ -62,9 +64,9 @@ public class ataActivity extends AppCompatActivity {
 
     public void TI1(View view) { redirectActivity(this, atati.class);}
 
-    public void Manajemen1(View view) { }
+    public void Manajemen1(View view) { redirectActivity(this, manajemenata.class);}
 
-    public void Akuntansi1(View view) { }
+    public void Akuntansi1(View view) { redirectActivity(this, ataakun.class);}
 
     public void Komunikasi1(View view) {
         redirectActivity(this, MAStatistika.class);

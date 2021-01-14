@@ -62,5 +62,5 @@ public class cel extends AppCompatActivity {
     public void cel4(View view) { redirectActivity(this, cel4.class);}
     public void cel5(View view) { redirectActivity(this, cel5.class);}
     public void cel6(View view) { redirectActivity(this, cel6.class);}
-    public void cel7(View view) { redirectActivity(this, cel.class);}
+    public void cel7(View view) { redirectActivity(this, cel7.class);}
 }

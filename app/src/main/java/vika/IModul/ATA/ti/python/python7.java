@@ -16,6 +16,6 @@ public class python7 extends AppCompatActivity {
         setContentView(R.layout.python7);
         PDFView pdfView;
         pdfView = findViewById(R.id.pdfViewpy7);
-        pdfView.fromAsset("M07Python.pdf").load();
+        pdfView.fromAsset("M05Ruby.pdf").load();
     }
 }

@@ -14,6 +14,6 @@ public class MA_Pert2 extends AppCompatActivity {
 
         PDFView pdfView;
         pdfView = findViewById(R.id.pdfView2);
-        pdfView.fromAsset("PTA_AP1.pdf").load();
+        pdfView.fromAsset("PTA_MA1.pdf").load();
     }
 }
