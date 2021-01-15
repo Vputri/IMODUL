@@ -6,10 +6,9 @@ import android.view.View;
 import android.os.Bundle;
 import android.content.Intent;
 
-import vika.IModul.ATA.akuntansi.ptaakun;
+import vika.IModul.PTA.akuntansi.ptaakun;
 import vika.IModul.PTA.Komunikasi_Psikolog.PTA_MA;
 import vika.IModul.PTA.SI.PTASI;
-import vika.IModul.PTA.SI.PTASIMODUL;
 import vika.IModul.PTA.TI.PTA_TI;
 import vika.IModul.PTA.manajemen.manajemenpta;
 

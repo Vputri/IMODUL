@@ -8,14 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import vika.IModul.ATA.atasitingk1;
-import vika.IModul.ATA.atasitingk2;
 import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
-import vika.IModul.PTA.SI.PTASI;
-import vika.IModul.PTA.SI.PTASIMODUL;
-import vika.IModul.PTA.SI.PTASIMODUL2;
-import vika.IModul.PTA.SI.PTASIMODUL3;
 import vika.IModul.R;
 
 import static vika.IModul.MainActivity.closeDrawer;

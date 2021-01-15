@@ -14,6 +14,7 @@ import vika.IModul.ATA.ti.C.cper4;
 import vika.IModul.ATA.ti.C.cper5;
 import vika.IModul.ATA.ti.C.cper6;
 import vika.IModul.ATA.ti.C.cper7;
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -54,7 +55,9 @@ public class fortan extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void fpert1(View view) { redirectActivity(this, fortan1.class);}
     public void fpert2(View view) { redirectActivity(this, fortan2.class);}
     public void fpert3(View view) { redirectActivity(this, fortan3.class);}

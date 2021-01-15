@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -47,7 +48,9 @@ public class oo extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void tpert1(View view) { redirectActivity(this, oo1.class);}
     public void tpert2(View view) { redirectActivity(this, oo2.class);}
     public void tpert3(View view) { redirectActivity(this, oo3.class);}

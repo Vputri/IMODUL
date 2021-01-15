@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -46,6 +47,9 @@ public class maatif extends AppCompatActivity {
     protected void onPause(){
         super.onPause();
         closeDrawer(drawerLayout);
+    }
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
     }
     public void mpert1(View view) { redirectActivity(this, maatif1.class);}
     public void mpert2(View view) { redirectActivity(this, maatif2.class);}

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -47,7 +48,9 @@ public class python extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void pypert1(View view) { redirectActivity(this, python1.class);}
     public void pypert2(View view) { redirectActivity(this, python2.class);}
     public void pypert3(View view) { redirectActivity(this, python3.class);}

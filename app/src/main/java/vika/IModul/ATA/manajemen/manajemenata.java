@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import vika.IModul.ATA.MAStatistika;
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -46,6 +47,9 @@ public class manajemenata extends AppCompatActivity {
             startActivity(Intent.createChooser(intent, "How to send mail?"));
         }
         catch (android.content.ActivityNotFoundException ex) { }
+    }
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
     }
 
     public void KAP(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}

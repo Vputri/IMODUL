@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -44,6 +45,9 @@ public class pas extends AppCompatActivity {
             startActivity(Intent.createChooser(intent, "How to send mail?"));
         }
         catch (android.content.ActivityNotFoundException ex) { }
+    }
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
     }
 
     public void pas1(View view) { redirectActivity(this, pas1.class);}

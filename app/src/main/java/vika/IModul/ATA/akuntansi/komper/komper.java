@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -44,6 +45,10 @@ public class komper extends AppCompatActivity {
             startActivity(Intent.createChooser(intent, "How to send mail?"));
         }
         catch (android.content.ActivityNotFoundException ex) { }
+    }
+
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
     }
 
     public void komper1(View view) { redirectActivity(this, komper1.class);}

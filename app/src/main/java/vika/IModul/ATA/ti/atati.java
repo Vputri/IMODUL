@@ -16,6 +16,7 @@ import vika.IModul.ATA.ti.openoffice.oo;
 import vika.IModul.ATA.ti.pascal.pascal;
 import vika.IModul.ATA.ti.python.python;
 import vika.IModul.ATA.ti.statistika.tisat;
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -55,7 +56,9 @@ public class atati extends AppCompatActivity {
         }
         catch (android.content.ActivityNotFoundException ex) { }
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void KTI(View view) { redirectActivity(this, oo.class);}
 
     public void Daskom(View view) { redirectActivity(this, c.class);}

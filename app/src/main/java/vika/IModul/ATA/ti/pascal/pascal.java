@@ -14,6 +14,7 @@ import vika.IModul.ATA.ti.openoffice.oo4;
 import vika.IModul.ATA.ti.openoffice.oo5;
 import vika.IModul.ATA.ti.openoffice.oo6;
 import vika.IModul.ATA.ti.openoffice.oo7;
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -54,7 +55,9 @@ public class pascal extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void ppert1(View view) { redirectActivity(this, pascal1.class);}
     public void ppert2(View view) { redirectActivity(this, pascal2.class);}
     public void ppert3(View view) { redirectActivity(this, pascal3.class);}

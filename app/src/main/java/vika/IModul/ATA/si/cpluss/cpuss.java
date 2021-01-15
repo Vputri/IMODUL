@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -46,6 +47,9 @@ public class cpuss extends AppCompatActivity {
         catch (android.content.ActivityNotFoundException ex) { }
     }
 
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void cpppert1(View view) { redirectActivity(this, cpuss1.class);}
     public void cpppert2(View view) { redirectActivity(this, cpuss2.class);}
     public void cpppert3(View view) { redirectActivity(this, cpuss3.class);}

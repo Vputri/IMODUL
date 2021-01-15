@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.PTA.SI.Qbasic.APPert1;
 import vika.IModul.R;
@@ -48,7 +49,9 @@ public class c extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void cpert1(View view) { redirectActivity(this, cper1.class);}
     public void cpert2(View view) { redirectActivity(this, cper2.class);}
     public void cpert3(View view) { redirectActivity(this, cper3.class);}

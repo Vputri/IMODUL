@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".ATA.akuntansi.ptaakun1">
+    tools:context=".PTA.akuntansi.ptaakun1">
 
     <ScrollView
         android:layout_width="match_parent"

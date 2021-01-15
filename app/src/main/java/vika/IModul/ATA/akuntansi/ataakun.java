@@ -8,9 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import vika.IModul.ATA.akuntansi.akeme.akeme;
+import vika.IModul.ATA.akuntansi.akunman.akunman;
+import vika.IModul.ATA.akuntansi.anp.anp;
 import vika.IModul.ATA.akuntansi.komper.komper;
-import vika.IModul.ATA.akuntansi.komper.komper1;
+import vika.IModul.ATA.akuntansi.paa.paa;
 import vika.IModul.ATA.akuntansi.pemograkun.pemograkun;
+import vika.IModul.ATA.akuntansi.pengakun2.pengakun;
 import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
@@ -60,17 +64,17 @@ public class ataakun extends AppCompatActivity {
         closeDrawer(drawerLayout);
     }
 
-    public void ataakun0(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun1(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun2(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun3(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun4(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show(); }
+    public void ataakun0(View view) { redirectActivity(this, pengakun.class);}
+    public void ataakun1(View view) { redirectActivity(this, pengakun.class);}
+    public void ataakun2(View view) { redirectActivity(this, pengakun.class);}
+    public void ataakun3(View view) { redirectActivity(this, pengakun.class);}
+    public void ataakun4(View view) { redirectActivity(this, akunman.class);}
     public void ataakun5(View view) { redirectActivity(this, pemograkun.class);}
     public void ataakun6(View view) { redirectActivity(this, komper.class);}
-    public void ataakun7(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun8(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun9(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun10(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun11(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void ataakun12(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
+    public void ataakun7(View view) { redirectActivity(this, akeme.class);}
+    public void ataakun8(View view) { redirectActivity(this, akeme.class);}
+    public void ataakun9(View view) { redirectActivity(this, akeme.class);}
+    public void ataakun10(View view) { redirectActivity(this, paa.class);}
+    public void ataakun11(View view) { redirectActivity(this, anp.class);}
+    public void ataakun12(View view) { redirectActivity(this, akunman.class);}
 }

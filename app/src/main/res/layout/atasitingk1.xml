@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".ATA.atasitingk1">
+    tools:context=".ATA.si.atasitingk1">
 
     <ScrollView
         android:layout_width="match_parent"

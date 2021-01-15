@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import vika.IModul.ATA.ti.python.python1;
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -47,7 +48,9 @@ public class tbo extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void tpert1(View view) { redirectActivity(this, tbo1.class);}
     public void tpert2(View view) { redirectActivity(this, tbo2.class);}
     public void tpert3(View view) { redirectActivity(this, tbo3.class);}

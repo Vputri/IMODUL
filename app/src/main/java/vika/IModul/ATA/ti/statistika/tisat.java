@@ -6,6 +6,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
 
@@ -45,7 +47,9 @@ public class tisat extends AppCompatActivity {
         super.onPause();
         closeDrawer(drawerLayout);
     }
-
+    public void ClickAbout(View view){
+        redirectActivity(this, AboutActivity.class);
+    }
     public void stpert1(View view) { redirectActivity(this, tisat1.class);}
     public void stpert2(View view) { redirectActivity(this, tisat2.class);}
     public void stpert3(View view) { redirectActivity(this, tisat3.class);}
