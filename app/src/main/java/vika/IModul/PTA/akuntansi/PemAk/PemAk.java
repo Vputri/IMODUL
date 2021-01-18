@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import vika.IModul.MainActivity;
-import vika.IModul.PTA.akuntansi.PemAk2;
 import vika.IModul.R;
 
 import static vika.IModul.MainActivity.closeDrawer;
@@ -39,7 +38,7 @@ public class PemAk extends AppCompatActivity {
     public void ClickFeedBack(View view){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"ilab@gunadarma.ac.id"});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"imodul@gmail.com"});
         intent.putExtra(Intent.EXTRA_SUBJECT, "FeedBack I-Modul App");
         try {
             startActivity(Intent.createChooser(intent, "How to send mail?"));

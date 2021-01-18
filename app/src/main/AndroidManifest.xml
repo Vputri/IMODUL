@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IMODUL">
-        <activity android:name=".ATA.akuntansi.anp.anp7"></activity>
+        <activity android:name=".ATA.manajemen.komputerisasianggaran.komputerisasianggaran3"></activity>
+        <activity android:name=".ATA.manajemen.komputerisasianggaran.komputerisasianggaran4" />
+        <activity android:name=".ATA.manajemen.komputerisasianggaran.komputerisasianggaran2" />
+        <activity android:name=".ATA.manajemen.komputerisasianggaran.komputerisasianggaran1" />
+        <activity android:name=".ATA.manajemen.komputerisasianggaran.komputerisasianggaran" />
+        <activity android:name=".ATA.akuntansi.anp.anp7" />
         <activity android:name=".ATA.akuntansi.anp.anp5" />
         <activity android:name=".ATA.akuntansi.anp.anp6" />
         <activity android:name=".ATA.akuntansi.anp.anp4" />
@@ -166,7 +171,7 @@
         <activity android:name=".PTA.akuntansi.PemAk.PemAk5" />
         <activity android:name=".PTA.akuntansi.PemAk.PemAk3" />
         <activity android:name=".PTA.akuntansi.PemAk.PemAk4" />
-        <activity android:name=".PTA.akuntansi.PemAk2" />
+        <activity android:name=".PTA.akuntansi.PemAk.PemAk2" />
         <activity android:name=".PTA.akuntansi.PemAk.PemAk1" />
         <activity android:name=".PTA.akuntansi.PemAk.PemAk" />
         <activity android:name=".PTA.akuntansi.AKK.akk3" />

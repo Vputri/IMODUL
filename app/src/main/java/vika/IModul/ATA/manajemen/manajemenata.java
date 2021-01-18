@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import vika.IModul.ATA.MAStatistika;
+import vika.IModul.ATA.manajemen.komputerisasianggaran.komputerisasianggaran;
 import vika.IModul.AboutActivity;
 import vika.IModul.MainActivity;
 import vika.IModul.R;
@@ -41,7 +42,7 @@ public class manajemenata extends AppCompatActivity {
     public void ClickFeedBack(View view){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"ilab@gunadarma.ac.id"});
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"imodul@gmail.com"});
         intent.putExtra(Intent.EXTRA_SUBJECT, "FeedBack I-Modul App");
         try {
             startActivity(Intent.createChooser(intent, "How to send mail?"));
@@ -52,9 +53,9 @@ public class manajemenata extends AppCompatActivity {
         redirectActivity(this, AboutActivity.class);
     }
 
-    public void KAP(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void KAP1(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
-    public void KP(View view) { Toast.makeText(getApplicationContext(), "Mohon maaf, modul tidak tersedia", Toast.LENGTH_LONG).show();}
+    public void KAP(View view) { redirectActivity(this, komputerisasianggaran.class);}
+    public void KAP1(View view) { redirectActivity(this, komputerisasianggaran.class);}
+    public void KP(View view) { redirectActivity(this, komputerisasianggaran.class);}
     public void statis(View view) { redirectActivity(this, MAStatistika.class);}
     public void statis2(View view) { redirectActivity(this, MAStatistika.class);}
     public void SP(View view) { redirectActivity(this, MAStatistika.class);}
